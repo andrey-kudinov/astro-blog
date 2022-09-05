@@ -8,7 +8,7 @@
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
     <style>
       .smooth {
@@ -24,14 +24,14 @@
     <nav class="bg-gray-900 p-4 mt-0 w-full">
       <div class="container mx-auto flex items-center">
         <div class="flex text-white font-extrabold">
-          <a class="flex text-white text-base no-underline hover:text-white hover:no-underline" href="index.html">
+          <a class="flex text-white text-base no-underline hover:text-white hover:no-underline" href="/">
             <span class="hidden w-0 md:w-auto md:block pl-1">Astro Diva</span>
           </a>
         </div>
         <div class="flex pl-4 text-sm">
           <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
             <li class="mr-2">
-              <a class="inline-block py-2 px-2 text-white no-underline" href="index.html">HOME</a>
+              <a class="inline-block py-2 px-2 text-white no-underline" href="/">HOME</a>
             </li>
             <!-- <li class="mr-2">
               <a
@@ -152,7 +152,7 @@
     <!--image-->
     <div
       class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded bg-center"
-      style="background-image: url('./post_1.JPG'); height: 75vh"
+      style="background-image: url('https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,h_700,w_700,c_fill/v1662394030/Blog/post_1_qj77x2.jpg'); height: 75vh"
     ></div>
 
     <!--Container-->
@@ -245,7 +245,7 @@
           <div class="w-full md:w-1/3 px-2 pb-12">
             <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
               <a href="#" class="no-underline hover:no-underline">
-                <img src="https://source.unsplash.com/_AjqGGafofE/400x200" class="h-48 w-full rounded-t shadow-lg" />
+                <img src="https://source.unsplash.com/_AjqGGafofE/400x200" class="h-48 w-full rounded-t shadow-lg" alt="post"/>
                 <div class="p-6 h-auto md:h-48">
                   <p class="text-gray-600 text-xs md:text-sm">GETTING STARTED</p>
                   <div class="font-bold text-xl text-gray-900">Lorem ipsum dolor sit amet.</div>
@@ -255,7 +255,7 @@
                   </p>
                 </div>
                 <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
-                  <img class="w-8 h-8 rounded-full mr-4" src="./ava.jpg" alt="Avatar of Author" />
+                  <img class="w-8 h-8 rounded-full mr-4" src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg" alt="Avatar of Author" />
                   <p class="text-gray-600 text-xs md:text-sm">2 MIN READ</p>
                 </div>
               </a>
@@ -264,7 +264,7 @@
           <div class="w-full md:w-1/3 px-2 pb-12">
             <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
               <a href="#" class="no-underline hover:no-underline">
-                <img src="https://source.unsplash.com/_AjqGGafofE/400x200" class="h-48 w-full rounded-t shadow" />
+                <img src="https://source.unsplash.com/_AjqGGafofE/400x200" class="h-48 w-full rounded-t shadow" alt="post"/>
                 <div class="p-6 h-auto md:h-48">
                   <p class="text-gray-600 text-xs md:text-sm">UNDERWATER</p>
                   <div class="font-bold text-xl text-gray-900">Biolumini algae diatomeae ecology.</div>
@@ -273,7 +273,7 @@
                   </p>
                 </div>
                 <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
-                  <img class="w-8 h-8 rounded-full mr-4" src="./ava.jpg" alt="Avatar of Author" />
+                  <img class="w-8 h-8 rounded-full mr-4" src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg" alt="Avatar of Author" />
                   <p class="text-gray-600 text-xs md:text-sm">4 MIN READ</p>
                 </div>
               </a>
@@ -282,7 +282,7 @@
           <div class="w-full md:w-1/3 px-2 pb-12">
             <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
               <a href="#" class="no-underline hover:no-underline">
-                <img src="https://source.unsplash.com/DEa8_vxKlEo/400x200" class="h-48 w-full rounded-t shadow" />
+                <img src="https://source.unsplash.com/DEa8_vxKlEo/400x200" class="h-48 w-full rounded-t shadow" alt="post"/>
                 <div class="p-6 h-auto md:h-48">
                   <p class="text-gray-600 text-xs md:text-sm">FOREST</p>
                   <div class="font-bold text-xl text-gray-900">What is life but a teardrop in the eye of infinity?</div>
@@ -292,7 +292,7 @@
                   </p>
                 </div>
                 <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
-                  <img class="w-8 h-8 rounded-full mr-4" src="./ava.jpg" alt="Avatar of Author" />
+                  <img class="w-8 h-8 rounded-full mr-4" src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg" alt="Avatar of Author" />
                   <p class="text-gray-600 text-xs md:text-sm">7 MIN READ</p>
                 </div>
               </a>
@@ -306,14 +306,14 @@
       <div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
         <div class="w-full mx-auto flex flex-wrap items-center">
           <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-            <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="index.html">
+            <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="/">
               <span class="text-base text-gray-200">Astro Diva</span>
             </a>
           </div>
           <!-- <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
             <ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
               <li>
-                <a class="inline-block py-2 px-3 text-white no-underline" href="index.html">HOME</a>
+                <a class="inline-block py-2 px-3 text-white no-underline" href="/">HOME</a>
               </li>
               <li>
                 <a

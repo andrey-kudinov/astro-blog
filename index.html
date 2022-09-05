@@ -8,7 +8,7 @@
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
     <link rel="stylesheet" href="./aos.css" />
   </head>
   <body class="bg-gray-800 font-sans leading-normal tracking-normal">
@@ -20,7 +20,7 @@
       <div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
         <!--Title-->
         <p class="text-white font-extrabold text-3xl md:text-5xl">Astro Blog</p>
-        <p class="text-xl md:text-2xl text-gray-500">Welcome to my Blog</p>
+        <p class="text-xl md:text-2xl text-gray-400">Welcome to my Blog</p>
       </div>
     </div>
 
@@ -45,7 +45,8 @@
                 "
                 data-tippy-content="#instagram"
                 href="https://instagram.com/"
-              >
+              > 
+                <span class="hidden">instagram</span>
                 <svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
@@ -67,6 +68,7 @@
                 data-tippy-content="#facebook_id"
                 href="https://www.facebook.com/"
               >
+                <span class="hidden">facebook</span>
                 <svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
                 </svg>
@@ -85,9 +87,9 @@
             data-aos-offset="-800"
             data-aos-once="true"
           >
-            <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
-              <div class="w-full md:w-2/3 rounded-t max-h-60">
-                <img src="./post_1.JPG" class="h-full w-full shadow object-cover object-center	" />
+            <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post_1">
+              <div class="w-full md:w-2/3 rounded-t max-h-96">
+                <img src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,h_340,w_680,c_fill/v1662394030/Blog/post_1_qj77x2.jpg" class="h-full w-full shadow object-cover object-center" alt="post"/>
               </div>
 
               <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
@@ -106,7 +108,7 @@
                     <img
                       class="w-8 h-8 rounded-full mr-4 avatar"
                       data-tippy-content="Zhanna Islamova"
-                      src="./ava.jpg"
+                      src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                       alt="Avatar of Author"
                     />
                     <p class="text-gray-600 text-xs md:text-sm">3 МИН ЧТЕНИЯ</p>
@@ -127,8 +129,8 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
-                  <img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6" />
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
+                  <img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6" alt="post"/>
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
                   <p class="text-gray-800 text-base px-6 mb-5">
@@ -142,7 +144,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -158,10 +160,11 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
                   <img
                     src="https://source.unsplash.com/collection/3106804/800x600"
                     class="h-64 w-full rounded-t pb-6"
+                    alt="post"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
@@ -176,7 +179,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -192,8 +195,8 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
-                  <img src="https://source.unsplash.com/collection/539527/800x600" class="h-64 w-full rounded-t pb-6" />
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
+                  <img src="https://source.unsplash.com/collection/539527/800x600" class="h-64 w-full rounded-t pb-6" alt="post"/>
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
                   <p class="text-gray-800 text-base px-6 mb-5">
@@ -206,7 +209,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -222,10 +225,11 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
                   <img
                     src="https://source.unsplash.com/collection/3657445/800x600"
                     class="h-full w-full rounded-t pb-6"
+                    alt="post"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
@@ -239,7 +243,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -255,10 +259,11 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
                   <img
                     src="https://source.unsplash.com/collection/764827/800x600"
                     class="h-full w-full rounded-t pb-6"
+                    alt="post"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
@@ -272,7 +277,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -288,10 +293,11 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
                   <img
                     src="https://source.unsplash.com/collection/325867/800x600"
                     class="h-full w-full rounded-t pb-6"
+                    alt="post"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
@@ -305,7 +311,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -321,10 +327,11 @@
               data-aos-anchor-placement="center-bottom"
             >
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                <a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+                <a href="post_1.html" class="flex flex-wrap no-underline hover:no-underline" title="post 1">
                   <img
                     src="https://source.unsplash.com/collection/1118905/800x600"
                     class="h-full w-full rounded-t pb-6"
+                    alt="post"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
@@ -338,7 +345,7 @@
                   <img
                     class="w-8 h-8 rounded-full mr-4 avatar"
                     data-tippy-content="Zhanna Islamova"
-                    src="./ava.jpg"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
                     alt="Avatar of Author"
                   />
                   <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
@@ -355,8 +362,8 @@
       <div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
         <div class="w-full mx-auto flex flex-wrap items-center">
           <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-            <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="index.html">
-              <span class="text-base text-gray-800">Astro Diva - Zhanna Islamova</span>
+            <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="/" title="Home">
+              <span class="text-base text-gray-400">Astro Diva - Zhanna Islamova</span>
             </a>
           </div>
         </div>
