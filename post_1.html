@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Astro Blog</title>
     <meta name="author" content="name" />
-    <meta name="description" content="description here" />
-    <meta name="keywords" content="keywords,here" />
-    <script src="./tailwind.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    <meta name="description" content="Astro Blog by Zhanna Islamova" />
+    <meta name="keywords" content="astro,blog" />
+    <meta property="og:title" content="Astro Blog by Zhanna Islamova">
+    <meta property="og:type" content="blog" />
+    <meta property="og:image" content="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/v1662394883/Blog/ava_bl9icx.jpg" />
+    <link href="./assets/animate.min.css" rel="stylesheet" />
+
     <style>
       .smooth {
         transition: box-shadow 0.3s ease-in-out;
@@ -19,6 +22,7 @@
       }
     </style>
   </head>
+
   <body class="bg-white font-sans leading-normal tracking-normal">
     <!--Nav-->
     <nav class="bg-gray-900 p-4 mt-0 w-full">
@@ -31,7 +35,7 @@
         <div class="flex pl-4 text-sm">
           <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
             <li class="mr-2">
-              <a class="inline-block py-2 px-2 text-white no-underline" href="/">HOME</a>
+              <a class="inline-block py-2 px-2 text-white no-underline" href="/" title="Home page">HOME</a>
             </li>
             <!-- <li class="mr-2">
               <a
@@ -341,6 +345,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./tailwind.js"></script>
 
     <script>
       /* Progress bar */

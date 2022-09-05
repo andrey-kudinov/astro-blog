@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Astro Blog</title>
     <meta name="author" content="name" />
-    <meta name="description" content="description here" />
-    <meta name="keywords" content="keywords,here" />
-    <script src="./tailwind.js"></script>
-    <link rel="stylesheet" href="./aos.css" />
+    <meta name="description" content="Astro Blog by Zhanna Islamova" />
+    <meta name="keywords" content="astro,blog" />
+    <meta property="og:title" content="Astro Blog by Zhanna Islamova">
+    <meta property="og:type" content="blog" />
+    <meta property="og:image" content="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/v1662394883/Blog/ava_bl9icx.jpg" />
+    <link rel="stylesheet" href="./assets/styles/aos.min.css" />
   </head>
+
   <body class="bg-gray-800 font-sans leading-normal tracking-normal">
     <!--Header-->
     <div
@@ -28,7 +31,7 @@
     <div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
       <div class="mx-0 sm:mx-6">
         <!--Nav-->
-        <nav class="mt-0 w-full">
+        <!-- <nav class="mt-0 w-full">
           <div class="container mx-auto flex items-center">
             <div class="flex mx-auto content-center">
               <a
@@ -75,7 +78,7 @@
               </a>
             </div>
           </div>
-        </nav>
+        </nav> -->
 
         <div class="bg-gray-800 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
           <!--Lead Card-->
@@ -370,14 +373,9 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@4"></script>
-    <script>
-      tippy('.avatar')
-    </script>
-    <script src="./aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
+    <script src="./assets/scripts/tailwind.min.js"></script>
+    <script async src="./assets/scripts/popper.min.js"></script>
+    <script async src="./assets/scripts/tippy.min.js"></script>
+    <script async src="./assets/scripts/aos.min.js"></script>
   </body>
 </html>
