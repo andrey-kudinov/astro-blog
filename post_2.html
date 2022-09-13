@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Astro Blog</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="Astro Blog by Zhanna Islamova" />
+    <meta name="keywords" content="astro,blog" />
+    <meta property="og:title" content="Astro Blog by Zhanna Islamova" />
+    <meta property="og:type" content="blog" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/v1662394883/Blog/ava_bl9icx.jpg"
+    />
+    <link href="./assets/animate.min.css" rel="stylesheet" />
+
+    <style>
+      .smooth {
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      ::selection {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white font-sans leading-normal tracking-normal">
+    <!--Nav-->
+    <nav class="bg-gray-900 p-4 mt-0 w-full">
+      <div class="container mx-auto flex items-center">
+        <div class="flex text-white font-extrabold">
+          <a class="flex text-white text-base no-underline hover:text-white hover:no-underline" href="/">
+            <span class="hidden w-0 md:w-auto md:block pl-1">Astro Diva</span>
+          </a>
+        </div>
+        <div class="flex pl-4 text-sm">
+          <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+            <li class="mr-2">
+              <a class="inline-block py-2 px-2 text-white no-underline" href="/" title="Home page">HOME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--slide in nav-->
+    <div id="header" class="bg-white fixed w-full z-10 top-0 hidden animated" style="opacity: 0.95">
+      <div class="bg-white"></div>
+      <!--Progress bar-->
+      <div
+        id="progress"
+        class="h-1 bg-white shadow"
+        style="background: linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0)"
+      ></div>
+    </div>
+
+    <!--Title-->
+    <div class="text-center pt-16 md:pt-32">
+      <p class="text-sm md:text-base text-green-500 font-bold">
+        13 сентября 2022 <span class="text-gray-900">/</span> МЫСЛИ
+      </p>
+      <h1 class="font-bold break-normal text-3xl md:text-5xl">Есть душа/энергия/кусочек</h1>
+    </div>
+
+    <!--image-->
+    <div
+      class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+      style="
+        background-image: url('https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,h_700,w_700,c_fill/v1662394030/Blog/IMG_6363_axq9vk.jpg');
+        height: 75vh;
+      "
+    ></div>
+
+    <!--Container-->
+    <div class="container max-w-5xl mx-auto -mt-32">
+      <div class="mx-0 sm:mx-6">
+        <div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal">
+          <!--Post Content-->
+
+          <!--Lead Para-->
+          <p class="text-2xl md:text-3xl mb-5">
+            Есть душа/энергия/кусочек. Она запускается в тело с самого рождения, так в утробе матери начинает
+            формироваться тело. Душа не новая, в большинстве случаев у нее свои травмы, ощущения, мысли, плюс, в
+            зависимости от совместимости с мамой, тело физическое начинает развиваться определённым образом. Момент
+            рождения душа так же выбирает сама и как ей рождаться тоже. Далее, душа маленького младенца продолжает
+            влиять на тело, испытывая определённые эмоции, таким образом что-то развивается быстрее / медленнее,
+            запускаются определённые энергетические процессы, активируются/блокируются энергетические центры/чакры -
+            отсюда появляются привычки, болезни, травмы и тд. И так всю жизнь с рождения.
+          </p>
+
+          <p class="py-3">
+            Планеты включаются в разное время так же как и чакры. Центры будут открываться и развиваться постепенно, для
+            этого мы используем натальную карту, чтобы понять сущность человека, увидеть его внутренности и путь его
+            развития души, оказывающей прямое воздействие на тело.
+          </p>
+          <p class="py-3">
+            Работать надо начинать с астральным и эфирным телами , не с внешним, потому что только работая с душой , мы
+            изменим себя . Если делать упор на внешнюю часть, мы будем делать некомфортно душе, которая привыкла к
+            старому телу. Душа меняется переходя с одного уровня развития на другой , но она не меняется просто так,
+            поэтому с ней надо работать иначе, давая причину этих изменений..они должны быть натуральными и нужными.
+          </p>
+          <p class="py-3">
+            Когда душа переходит на новый уровень тело меняется автоматически , потому что душа изменила свои привычки ,
+            тело это может даже не заметить . Оно просто подстраиваемся под внутреннее состояние. Мы можем делать что-то
+            не осознано и с лёгкостью будем меняться сами собой.
+          </p>
+          <p class="py-3">
+            Конечно тело должно помогать физическими упражнениями или массажами, уколами и тд книгами и другими
+            всевозможными инструментами.
+          </p>
+          <p class="py-3">
+            Это «место» моя ступенька наверх и возможность поделиться своими знаниями и опытом с другими, с Вами. Кто
+            знает, может среди вас найдётся тот человек, который ещё не знает что такое душевность или чем она
+            отличается от духовности… Или что вообще делать и как быть когда ты упёрся в стену и не знаешь куда
+            двигаться дальше.
+          </p>
+
+          <blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Продолжение следует :)</blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-200">
+      <div class="container w-full max-w-6xl mx-auto px-2 py-8">
+        <div class="flex flex-wrap -mx-2">
+          <div class="w-full md:w-1/3 px-2 pb-12">
+            <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+              <a href="/post_1.html" class="no-underline hover:no-underline flex flex-col h-full">
+                <img
+                  src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,h_700,w_700,c_fill/v1662394030/Blog/IMG_6363_axq9vk.jpg"
+                  class="h-48 w-full rounded-t shadow-lg object-cover object-center"
+                  alt="post"
+                />
+                <div class="p-6 h-auto md:min-h-max mb-auto">
+                  <p class="text-gray-600 text-xs md:text-sm">ЗНАКОМСТВО</p>
+                  <div class="font-bold text-xl text-gray-900">👋 Всем привет, я Жанна</div>
+                  <p class="text-gray-800 text-base mb-5">
+                    Сколько себя помню, я всегда ассоциировала свою жизнь и свой путь с фразой «никогда не сдавайся».
+                    Веря в эти слова и следуя им, я пришла к духовному развитию, практикам медитаций и астрологии.
+                  </p>
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                  <img
+                    class="w-8 h-8 rounded-full mr-4"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
+                    alt="Avatar of Author"
+                  />
+                  <p class="text-gray-600 text-xs md:text-sm">3 МИН ЧТЕНИЯ</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-2 pb-12">
+            <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+              <a href="#" class="no-underline hover:no-underline flex flex-col h-full">
+                <img
+                  src="https://source.unsplash.com/_AjqGGafofE/400x200"
+                  class="h-48 w-full rounded-t shadow"
+                  alt="post"
+                />
+                <div class="p-6 h-auto md:min-h-max mb-auto">
+                  <p class="text-gray-600 text-xs md:text-sm">UNDERWATER</p>
+                  <div class="font-bold text-xl text-gray-900">Biolumini algae diatomeae ecology.</div>
+                  <p class="text-gray-800  text-base mb-5">
+                    Lorem ipsum dolor sit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  </p>
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                  <img
+                    class="w-8 h-8 rounded-full mr-4"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
+                    alt="Avatar of Author"
+                  />
+                  <p class="text-gray-600 text-xs md:text-sm">4 MIN READ</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-2 pb-12">
+            <div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+              <a href="#" class="no-underline hover:no-underline flex flex-col h-full">
+                <img
+                  src="https://source.unsplash.com/DEa8_vxKlEo/400x200"
+                  class="h-48 w-full rounded-t shadow"
+                  alt="post"
+                />
+                <div class="p-6 h-auto md:min-h-max mb-auto">
+                  <p class="text-gray-600 text-xs md:text-sm">FOREST</p>
+                  <div class="font-bold text-xl text-gray-900">What is life but a teardrop in the eye of infinity?</div>
+                  <p class="text-gray-800  text-base mb-5">
+                    Mollis pretium integer eros et dui orci, lectus nec elit sagittis neque. Dignissim ac nullam semper
+                    aliquet volutpat, ut scelerisque.
+                  </p>
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                  <img
+                    class="w-8 h-8 rounded-full mr-4"
+                    src="https://res.cloudinary.com/dkqwi0tah/image/upload/q_auto:eco,c_crop,g_face,w_600,h_600/r_max/c_scale,w_200/v1662394883/Blog/ava_bl9icx.jpg"
+                    alt="Avatar of Author"
+                  />
+                  <p class="text-gray-600 text-xs md:text-sm">7 MIN READ</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-900">
+      <div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
+        <div class="w-full mx-auto flex flex-wrap items-center">
+          <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+            <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="/">
+              <span class="text-base text-gray-200">Astro Diva</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/scripts/tailwind.min.js"></script>
+
+    <script>
+      /* Progress bar */
+      //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+      var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight',
+        progress = document.querySelector('#progress'),
+        scroll
+      var scrollpos = window.scrollY
+      var header = document.getElementById('header')
+
+      document.addEventListener('scroll', function () {
+        /*Refresh scroll % width*/
+        scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
+        progress.style.setProperty('--scroll', scroll + '%')
+
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY
+
+        if (scrollpos > 100) {
+          header.classList.remove('hidden')
+          header.classList.remove('fadeOutUp')
+          header.classList.add('slideInDown')
+        } else {
+          header.classList.remove('slideInDown')
+          header.classList.add('fadeOutUp')
+          header.classList.add('hidden')
+        }
+      })
+    </script>
+  </body>
+</html>
